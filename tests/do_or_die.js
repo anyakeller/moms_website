@@ -13,13 +13,16 @@ const server = require("../server");
 // remember to call
 // requester.close()
 
-// A basic test
+// Test dotenv
+// NO NONONO
+/*
 describe("Test dotenv", function() {
   it("should be ok or whatever...", function() {
     //assert.equal([1, 2, 3].indexOf(4), -1);
     expect(process.env.WHAT_SHE_SAID).to.equal("thats");
   });
 });
+*/
 
 // Testing GET to /
 describe("Test GET to /", function() {
