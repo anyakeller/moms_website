@@ -1,6 +1,10 @@
-language: node_js
-node_js:
-  - "stable"
+# thank you kind stranger for posting about npm ci
+install:
+  - npm ci
 cache:
   directories:
     - "node_modules"
+    - "$HOME/.npm"
+language: node_js
+node_js:
+  - "stable"

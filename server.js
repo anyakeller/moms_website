@@ -8,10 +8,17 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// AHHHH
-console.log(process.env.WHAT_SHE_SAID);
+// Test dotenv
+// console.log(process.env.WHAT_SHE_SAID);
+
+// Test GET to /
+app.get('/', (req, res) => {
+  res.send('did you get this?');
+});
 
 // Start the API server
-app.listen(PORT, function() {
+const SERVER = app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
+
+module.exports = SERVER;
