@@ -1,0 +1,16 @@
+{
+  "name": "moms_website",
+  "version": "1.0.0",
+  "description": "yeah ok",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me I guess",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1"
+  }
+}
