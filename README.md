@@ -13,6 +13,13 @@ I don't remember how to use React.js and Node.js please help
 ## If you want to fork and run this locally for whatever weird reason...
 Idk sure go ahead.
 
-TODO:
+
+## TODO:
 - finish README
 - figure out what to do
+
+
+### Note to self
+To skip a build use [skip travis] in commit message
+example:
+`git commit -m "[skip travis] Update README"`
