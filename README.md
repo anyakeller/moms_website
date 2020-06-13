@@ -1,5 +1,5 @@
 # A portfolio website "for my mom"
-#####(me trying to remember how node.js and react.js work)
+##### (me trying to remember how node.js and react.js work)
 
 [![Build Status](https://travis-ci.com/anyakeller/moms_website.svg?token=BzFRF3wP8jz2KbgNvFb5&branch=master)](https://travis-ci.com/anyakeller/moms_website)
 
