@@ -1,13 +1,17 @@
-//AHHH
-require('dotenv').config()
-
 // Use-y stuff
 const express = require('express');
+const routes = require("./routes");
+
+//AHHH
+require('dotenv').config()
 
 // set stuff up
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// I still don't understand this middleware stuff
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -17,6 +21,9 @@ if (process.env.NODE_ENV === "production") {
 // Test dotenv
 // console.log(process.env.WHAT_SHE_SAID);
 
+// Route stuff
+// Use main routes
+app.use(routes);
 // Test GET to /
 app.get('/', (req, res) => {
   res.send('did you get this?');
