@@ -5,23 +5,48 @@ import Gallery from "./pages/gallery";
 
 //import "./App.css";
 
+const ROUTES = [
+  {
+    path: "/",
+    component: Home,
+    isActive: false,
+    name: "Home"
+  },
+  {
+    path: "/gallery",
+    component: Gallery,
+    isActive: false,
+    name: "Gallery"
+  }
+];
+
+// formats routes for mapping
+function formatRoutes(routedata,key) {
+  console.log(routedata);
+  return (
+    <Route
+      exact
+      path={routedata.path}
+      render={props => <routedata.component {...props} />}
+      key={key}
+    />
+  );
+}
+
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      routesList: ROUTES.map((route, key) => formatRoutes(route,key))
+    };
+    //console.log(this.state.routesList);
+  }
   render() {
     return (
       <Router>
-        <div className="main-container">
-          <header>
-            <h1>H1 YEET</h1>
-            <p>I may die</p>
-          </header>
-
+        <div id="body-main">
           <Switch>
-            <Route exact path="/" render={props => <Home {...props} />} />
-            <Route
-              exact
-              path="/gallery"
-              render={props => <Gallery {...props} />}
-            />
+            {this.state.routesList}
           </Switch>
         </div>
       </Router>
