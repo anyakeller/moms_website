@@ -24,10 +24,6 @@ if (process.env.NODE_ENV === "production") {
 // Route stuff
 // Use main routes
 app.use(routes);
-// Test GET to /
-app.get('/', (req, res) => {
-  res.send('did you get this?');
-});
 
 // Start the API server
 const SERVER = app.listen(PORT, function() {

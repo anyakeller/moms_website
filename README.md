@@ -66,3 +66,6 @@ example:
 `git commit -m "[skip travis] Update README"`
 I use zsh so:
 `gcam "[skip travis] Update READMEMES"`
+
+To kill all node process
+`$killall node`

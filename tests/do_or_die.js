@@ -25,11 +25,11 @@ describe("Test dotenv", function() {
 */
 
 // Testing GET to /
-describe("Test GET to /", function() {
+describe("Test GET to /api/testing", function() {
   it("GETs something", function(done) {
     chai
       .request(server)
-      .get("/")
+      .get("/api/testing")
       .end(function(err, res) {
         //expect(res).to.have.status(123);
         expect(res.text).to.equal('did you get this?');
