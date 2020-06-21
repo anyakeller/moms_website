@@ -6,13 +6,13 @@ class Home extends Component {
   }
   state = {};
   render() {
-    console.log(this.props);
     return (
-      <>
+      <div className="home-div">
         <div className="container">
-          <h1>You are home!!!</h1>
+        <h1 id="home-name">REBEKAH LASKIN</h1>
+          <p>You are home!!!</p>
         </div>
-      </>
+      </div>
     );
   }
 }

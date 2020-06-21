@@ -16,3 +16,6 @@ client/build
 # gah!
 .DS_Store
 .env
+
+#boostrap variables reference
+client/_variables.scss
