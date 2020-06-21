@@ -1,4 +1,4 @@
-import React , {useState} from "react";
+import React, { useState } from "react";
 import { useLocation, Switch, Route } from "react-router-dom";
 
 // pages
@@ -42,14 +42,18 @@ const InsideApp = () => {
 
   React.useEffect(() => {
     console.log("Location changed");
-    setWhere(location.pathname)
+    setWhere(location.pathname);
     console.log(where);
   }, [location]);
 
   return (
-    <div id="body-main" className={where === "/" ? "body-home" : "" }>
-      <Navbar routes={ROUTES} />
-      <Switch>{routesList}</Switch>
+    <div id="body-main" className={where === "/" ? "body-home" : ""}>
+      <div class="container h-100">
+        <div className="row justify-content-end">
+          <Navbar routes={ROUTES} />
+        </div>
+        <Switch>{routesList}</Switch>
+      </div>
     </div>
   );
 };

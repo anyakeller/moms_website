@@ -7,10 +7,9 @@ class Home extends Component {
   state = {};
   render() {
     return (
-      <div className="home-div">
-        <div className="container">
-        <h1 id="home-name">REBEKAH LASKIN</h1>
-          <p>You are home!!!</p>
+      <div className="row h-100 justify-content-center align-items-center">
+        <div className="jumbotron rounded-0">
+          <h1 id="home-name">REBEKAH LASKIN</h1>
         </div>
       </div>
     );

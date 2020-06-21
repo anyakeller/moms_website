@@ -4,9 +4,13 @@
 
 $body-bg: transparent;
 
+$jumbotron-bg: rgba(119, 119, 119, 0.8);
+.jumbotron{
+  backdrop-filter: blur(4px);
+}
+
 $normal-font: "Quicksand", sans-serif;
 $title-font: "Open Sans", sans-serif;
-
 
 $font-family-sans-serif: $normal-font;
 $font-size-base: 1.2rem;
@@ -20,7 +24,7 @@ body > #root > div {
   height: 100vh;
 }
 
-.body-home{
+.body-home {
   background-image: url("./images/enamel1.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
