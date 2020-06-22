@@ -4,6 +4,7 @@ import {
 } from "react-router-dom";
 import InsideApp from "./InsideApp";
 
+
 // for the background color and stuff that doesn't change
 const App = () => {
   /*
