@@ -9,5 +9,6 @@ cache:
 language: node_js
 script:
   - npm test
+  - npm run build
 node_js:
   - "stable"
