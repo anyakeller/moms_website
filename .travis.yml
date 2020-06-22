@@ -11,6 +11,5 @@ language: node_js
 script:
   - npm test
   - npm run build
-  - cd client && npm test
 node_js:
   - "stable"
