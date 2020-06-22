@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "yeah ok",
   "main": "server.js",
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "test": "mocha tests/do_or_die.js",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
