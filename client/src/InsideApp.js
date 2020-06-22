@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom"; //useLocation
 
 // pages
 import Home from "./pages/home";
@@ -37,7 +37,7 @@ function formatRoutes(routedata, key) {
 const routesList = ROUTES.map((route, key) => formatRoutes(route, key));
 
 const InsideApp = () => {
-  const location = useLocation();
+  //const location = useLocation();
   return (
     //  <div id="body-main" className={where === "/" ? "body-home" : ""}>
     <div id="body-main">
