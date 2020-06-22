@@ -6,7 +6,6 @@ import InsideApp from "./InsideApp";
 
 // for the background color and stuff that doesn't change
 const App = () => {
-
   /*
   const location = useLocation();
   React.useEffect(() => {
