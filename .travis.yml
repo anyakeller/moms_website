@@ -4,7 +4,10 @@ install:
 cache:
   directories:
     - "node_modules"
+    - "client/node_modules"
     - "$HOME/.npm"
 language: node_js
+script:
+  - npm test
 node_js:
   - "stable"
