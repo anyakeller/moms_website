@@ -1,7 +1,9 @@
 # A portfolio website "for my mom"
 ##### (me trying to remember how node.js and react.js work)
 
-[![Build Status](https://travis-ci.com/anyakeller/moms_website.svg?token=BzFRF3wP8jz2KbgNvFb5&branch=master)](https://travis-ci.com/anyakeller/moms_website)
+[![MASTER Build Status](https://travis-ci.com/anyakeller/moms_website.svg?token=BzFRF3wP8jz2KbgNvFb5&branch=master)](https://travis-ci.com/anyakeller/moms_website)
+
+[![Current Sandbox Build Status](https://travis-ci.com/anyakeller/moms_website.svg?branch=website-default-nav-redesign)](https://travis-ci.com/anyakeller/moms_website)
 
 Made with node.js and react.js and a lot of other stuff (it's all in package.json and client/package.json under dependancies)
 Thanks to the people who made these packages!
