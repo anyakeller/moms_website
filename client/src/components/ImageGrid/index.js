@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import AllImages from "./../../allImages.json";
-//import HomeImageTile from "./HomeImageTile.js";
+import HomeImageTile from "./HomeImageTile.js";
 import "./ImageGrid.scss";
 
 // class version
@@ -8,48 +8,62 @@ import "./ImageGrid.scss";
 class ImageGrid extends Component {
   constructor(props) {
     super(props);
-    var imageWidths = this.props.homeImages.map((image, id) => "30%");
     this.state = {
-      imageWidths: imageWidths
+      scaleFactor: 0.1
     };
   }
 
   populateImages = () => {
-    //console.log(this.state.imageWidths);
+    const originalWidths = this.props.homeImages.map((image, id) => {
+      return AllImages[image].width;
+    });
     return this.props.homeImages.map((image, id) => {
-      //console.log(AllImages[image]);
       return (
-        <img
-          className="home-img-tile"
-          src={"./../images/" + AllImages[image].file_name}
+        <HomeImageTile
+          scaleFactor={this.state.scaleFactor}
+          naturalWidth={originalWidths[id]}
+          {...AllImages[image]}
+          id={id}
           key={id}
-          alt={AllImages[image].alt}
-          style={{ width: this.state.imageWidths[id], display: "block" }}
         />
       );
-      //return <HomeImageTile {...AllImages[image]} key={id} />;
     });
   };
 
-  componentDidMount() {
-    console.log("reee");
-    var pics = document.getElementsByClassName("home-img-tile");
-    this.setState(state => {
-      var newDimentions = state.imageWidths.map((widthValue, id) => {
-        return pics[id].naturalWidth/10;
+  handleInputChange = event => {
+    console.log("change");
+    const value = event.target.value;
+    let parsed = parseFloat(value);
+    if (parsed) {
+      this.setState(state => {
+        return { scaleFactor: parsed };
       });
-      return { imageWidths: newDimentions };
-    });
-
-  }
+    }
+  };
+  /*
+    <div className="input-group mb-3">
+      <div className="input-group-prepend">
+        <span className="input-group-text" id="inputGroup-sizing-default">
+          Default
+        </span>
+      </div>
+      <input
+        type="text"
+        onChange={this.handleInputChange}
+        className="form-control"
+        aria-label="Default"
+        aria-describedby="inputGroup-sizing-default"
+      />
+    </div>
+    */
 
   render() {
     return (
-      <div className="image-row">
-        <div className="row flex-fill d-flex align-items-center">
-          {this.populateImages()}
+      //<div className="image-row">
+        <div className="row justify-content-center bg-blue flex-grow-1 align-items-center">
+          <div id="home-image-div">{this.populateImages()}</div>
         </div>
-      </div>
+    //  </div>
     );
   }
 }

@@ -4,17 +4,26 @@ class HomeImageTile extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      width: 0
+      naturalWidth: props.naturalWidth,
+      scaleFactor: props.scaleFactor
     };
   }
+
+  static getDerivedStateFromProps(newProps, prevState) {
+    return {
+      scaleFactor: newProps.scaleFactor
+    };
+  }
+
   render() {
     return (
       <img
         className="home-img-tile"
         src={"./../images/" + this.props.file_name}
-        key={this.props.id}
+        tile-key={this.props.id}
         alt={this.props.alt}
-        style={{ maxWidth: "30%", display: "block" }}
+        //width={this.props.newWidth == 0 ? this.props.width : this.props.newWidth}
+        width={this.state.naturalWidth * this.state.scaleFactor}
       />
     );
   }
