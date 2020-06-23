@@ -1,16 +1,16 @@
 // Use-y stuff
-const express = require('express');
+const express = require("express");
 const routes = require("./routes");
 
 //AHHH
-require('dotenv').config()
+require("dotenv").config();
 
 // set stuff up
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 // I still don't understand this middleware stuff
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Serve up static assets (usually on heroku)

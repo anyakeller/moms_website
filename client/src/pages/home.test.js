@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from './App';
+import Home from './home';
 
 test('verifies something', () => {
-  const { getByText } = render(<App />);
-  const homeWord = getByText(/Home/);
+  const { getByText } = render(<Home />);
+  const homeWord = getByText(/REBEKAH LASKIN/);
   expect(homeWord).toBeInTheDocument();
 });
