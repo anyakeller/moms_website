@@ -9,7 +9,7 @@ class ImageGrid extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      scaleFactor: 0.1
+      scaleFactor: 0.15
     };
   }
 
