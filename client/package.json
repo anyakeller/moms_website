@@ -11,8 +11,6 @@
     "@testing-library/user-event": "^7.1.2",
     "autoprefixer": "^9.8.1",
     "bootstrap": "^4.5.0",
-    "html-to-react": "^1.4.3",
-    "image-size": "^0.8.3",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "popper.js": "^1.16.1",
@@ -46,5 +44,6 @@
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.2",
     "webpack": "4.42.0"
-  }
+  },
+  "proxy": "http://localhost:5000"
 }

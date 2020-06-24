@@ -18,6 +18,10 @@
   },
   "author": "me I guess",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anyakeller/moms_website"
+  },
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
