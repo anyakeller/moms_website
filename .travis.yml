@@ -1,15 +1,19 @@
-# thank you kind stranger for posting about npm ci
 install:
   - npm ci
   - cd client && npm ci
 cache:
   directories:
-    - "node_modules"
-    - "client/node_modules"
+    - node_modules
+    - client/node_modules
     - "$HOME/.npm"
 language: node_js
 script:
   - npm test
   - npm run build
 node_js:
-  - "stable"
+  - stable
+deploy:
+  provider: heroku
+  api_key:
+    secure: ycNXeGeoDyhwbi8svDWYcsF5ZKiACx6n5W7ltf4mcDIXE8dNH5MYnuqniMXQZoHLZIp0mj3kerk5j1w23CgYy3hL8kSoofPBINh9BEZYqfbKmII0HiPM7jr3NVcAmsCv+D9J13wKcEYWBHEtvxgt3fpBRfodQOssmZPIGgj1QmNb79ctwtiTtRLMDohSuao4JVzHSFw134B3LY0yYCndAjvmhVBZB9Y4Uyf/8e0BeGooRdUh/iXIcj7CpMdDAIgXagVBMbYhxeLyeJ6ukmHbw2GmxFWthDPimXSD73qWN8qc7NNgUwQHw9rfRTMDEj3bc12EYGT/K77JrHZuK2EbCNjNWyajqVec+lq8nAVke/IRRzW+yS7jJFjEl/yqnR4iU6P4p5VySDqJjNz6xp3l8t4/BSSSYD+WOsOpeKIEcKg1CtiJ7THYVT9ihVgBz0BLpbRPkokE+7weyAH4oRriT17H7EJOOHaLljlKjFny+0rYcBINKDxSYyttQBtoTlag5RVXa/6kWBXPKrgpsd5hEHeCBdQGyIQxgYYgcZCxqepANNyB48V8vXypmkkP69CUBJo9owt0687fMY6Ck/Fum5STUCHOEUb1OT/Eu7kak58XvV0HVt3jOGOLfH9IdVHpNSx4k+5gjlmomJPxtOKgv7KMnidMAImmhbFV0HY7qyM=
+  app: moms-website-thing
