@@ -1,18 +1,13 @@
 import React from "react";
 import ImageGrid from "./../components/ImageGrid";
 
-const HOMEIMAGES = [
-  "Brooch with criss cross 1",
-  "Brooch with gold disks 2",
-  "Brooch with gold wires2"
-];
 function Home() {
   return (
     <>
-      <div className="row align-items-center">
+      <div className="row align-items-center px-5">
         <h1 id="home-name" className="mt-5 mb-0">REBEKAH LASKIN</h1>
       </div>
-      <ImageGrid homeImages={HOMEIMAGES} />
+      <ImageGrid/>
     </>
   );
 }

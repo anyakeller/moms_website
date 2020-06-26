@@ -5,37 +5,28 @@ class HomeImageTile extends Component {
     super(props);
     this.state = {
       naturalWidth: props.naturalWidth,
-      scaleFactor: props.scaleFactor,
-      imgMarginsToggle: props.imgMarginsToggle
+      maxScaleFactor: props.maxScaleFactor,
+      isBigScreen: props.isBigScreen
       //maxScaleFactor: props.maxScaleFactor
     };
   }
 
   static getDerivedStateFromProps(newProps, prevState) {
     return {
-      scaleFactor: newProps.scaleFactor,
-      imgMarginsToggle: newProps.imgMarginsToggle
+      isBigScreen: newProps.isBigScreen
     };
   }
-
-  /*
-   <div
-          className="col-xl-auto col-lg-12 col-md-12 col-sm-12 col-12 px-0"
-          style={{
-            maxWidth: this.state.naturalWidth * this.state.scaleFactor,
-            height: "auto"
-          }}
-        >
-        */
 
   render() {
     return (
       <div
         style={{
-          maxWidth: this.state.naturalWidth * this.state.scaleFactor,
+          width: this.state.isBigScreen
+            ? this.state.naturalWidth * this.state.maxScaleFactor
+            : `${this.props.ratioWidthToLargest * 100}%`,
           height: "auto"
         }}
-        className={this.state.imgMarginsToggle ? "px-2" : ""}
+        className={this.state.isBigScreen ? "" : "px-2"}
       >
         <img
           className="home-img-tile img-fluid"
