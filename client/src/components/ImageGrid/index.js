@@ -71,13 +71,15 @@ function ImageGrid(props) {
 
   return (
     <div
-      className={`row justify-content-center bg-blue flex-grow-1 align-items-center ${isBigScreen ? "" : "pt-5"}`}
-      style={{ position: "relative", top: "-20px" }}
+      className={`row justify-content-center bg-blue flex-grow-1 align-items-center ${
+        isBigScreen ? "" : "pt-5"
+      }`}
     >
       <div
         className={`align-items-center ${
           isBigScreen ? "d-flex flex-row" : "d-flex flex-column"
         }`}
+          style={{ marginBottom: "74.5px" }}
       >
         {populateImages()}
       </div>

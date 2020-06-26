@@ -1,3 +1,11 @@
-.active-nav{
-  color:red;
+.nav-link {
+  color: #cbccca;
+
+  &:hover {
+    color: #b7b8b6;
+  }
+
+  &.active-nav {
+    color: #e9ebe8;
+  }
 }
