@@ -79,7 +79,7 @@ function ImageGrid(props) {
         className={`align-items-center ${
           isBigScreen ? "d-flex flex-row" : "d-flex flex-column"
         }`}
-          style={{ marginBottom: "74.5px" }}
+          style={{ marginBottom: "117px" }}
       >
         {populateImages()}
       </div>
