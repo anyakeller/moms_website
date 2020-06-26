@@ -71,8 +71,8 @@ function ImageGrid(props) {
 
   return (
     <div
-      className="row justify-content-center"
-      style={{ position: "relative", top: "30px" }}
+      className="row justify-content-center bg-blue flex-grow-1 align-items-center"
+      style={{ position: "relative", top: "-20px" }}
     >
       <div
         className={`align-items-center ${
