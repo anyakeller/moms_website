@@ -71,7 +71,7 @@ function ImageGrid(props) {
 
   return (
     <div
-      className="row justify-content-center bg-blue flex-grow-1 align-items-center"
+      className={`row justify-content-center bg-blue flex-grow-1 align-items-center ${isBigScreen ? "" : "pt-5"}`}
       style={{ position: "relative", top: "-20px" }}
     >
       <div
