@@ -41,7 +41,7 @@ const InsideApp = () => {
   return (
     //  <div id="body-main" className={where === "/" ? "body-home" : ""}>
     <div id="body-main">
-      <div className="container-fluid flex-column h-100 d-flex ">
+      <div className="container h-100">
         <div className="row justify-content-end">
           <Navbar routes={ROUTES} />
         </div>

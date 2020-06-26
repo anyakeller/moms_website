@@ -17,12 +17,21 @@ class HomeImageTile extends Component {
     };
   }
 
+// old
+/*
+  style={{
+    width: this.state.isBigScreen
+      ? this.state.naturalWidth * this.state.maxScaleFactor
+      : `${this.props.ratioWidthToLargest * 100}%`,
+    height: "auto"
+  }}
+*/
   render() {
     return (
       <div
         style={{
           width: this.state.isBigScreen
-            ? this.state.naturalWidth * this.state.maxScaleFactor
+            ? `${this.props.ratioWidthToSum * 100}%`
             : `${this.props.ratioWidthToLargest * 100}%`,
           height: "auto"
         }}

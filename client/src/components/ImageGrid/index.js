@@ -7,7 +7,7 @@ import { useMediaQuery } from "react-responsive";
 
 // hard coded values to set scale factor parameters
 const breakPointScreenSize = 992; // set when window width ehhhh to switch to collumn small mode
-const maxScaleFactor = 0.15; //scale factor on large screens, doesn't change
+const maxScaleFactor = 0.16; //scale factor on large screens, doesn't change
 
 const HOMEIMAGES = [
   "Brooch with criss cross 1",
@@ -32,10 +32,15 @@ const maxImgIndex = originalWidths.reduce(
   (iMax, x, i, arr) => (x > arr[iMax] ? i : iMax),
   0
 );
+const sumFirstThree = originalWidths.reduce((a, b) => a + b, 0);
+//console.log(sumFirstThree);
 const maxImgWidth = originalWidths[maxImgIndex];
 //const q = 0.9 / originalWidths[maxImgIndex];
 const ratioWidthToLargest = originalWidths.map(
   (width, id) => width / maxImgWidth
+);
+const ratioWidthToSum = originalWidths.map(
+  (width, id) => width / sumFirstThree
 );
 //console.log(originalWidths[maxImgIndex]);
 //console.log(q);
@@ -55,6 +60,7 @@ function ImageGrid(props) {
           naturalWidth={originalWidths[id]}
           isBigScreen={isBigScreen}
           ratioWidthToLargest={ratioWidthToLargest[id]}
+          ratioWidthToSum={ratioWidthToSum[id]}
           {...AllImages[image]}
           id={id}
           key={id}
@@ -69,11 +75,9 @@ function ImageGrid(props) {
       style={{ position: "relative", top: "30px" }}
     >
       <div
-        className={
-          isBigScreen
-            ? "align-items-center d-flex flex-row"
-            : "align-items-center d-flex flex-column"
-        }
+        className={`align-items-center ${
+          isBigScreen ? "d-flex flex-row" : "d-flex flex-column"
+        }`}
       >
         {populateImages()}
       </div>
