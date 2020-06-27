@@ -4,6 +4,6 @@ import App from './App';
 
 test('verifies something', () => {
   const { getByText } = render(<App />);
-  const homeWord = getByText(/Home/);
+  const homeWord = getByText(/home/);
   expect(homeWord).toBeInTheDocument();
 });
