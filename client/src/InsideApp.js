@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom"; //useLocation
 // pages
 import Home from "./pages/home";
 import Gallery from "./pages/gallery";
+import About from "./pages/about";
 // components
 import Navbar from "./components/Navbar";
 
@@ -11,13 +12,18 @@ const ROUTES = [
   {
     path: "/",
     component: Home,
-    name: "Home"
+    name: "home"
   },
   {
     path: "/gallery",
     component: Gallery,
-    name: "Gallery"
-  }
+    name: "gallery"
+  },
+    {
+      path: "/about",
+      component: About,
+      name: "about"
+    }
 ];
 
 // formats routes for mapping

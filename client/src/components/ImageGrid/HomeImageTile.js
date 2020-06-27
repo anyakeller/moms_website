@@ -17,15 +17,6 @@ class HomeImageTile extends Component {
     };
   }
 
-// old
-/*
-  style={{
-    width: this.state.isBigScreen
-      ? this.state.naturalWidth * this.state.maxScaleFactor
-      : `${this.props.ratioWidthToLargest * 100}%`,
-    height: "auto"
-  }}
-*/
   render() {
     return (
       <div
@@ -33,7 +24,8 @@ class HomeImageTile extends Component {
           width: this.state.isBigScreen
             ? `${this.props.ratioWidthToSum * 100}%`
             : `${this.props.ratioWidthToLargest * 100}%`,
-          height: "auto"
+          height: "auto",
+          margin: "0px 1.5px"
         }}
         className={this.state.isBigScreen ? "" : "px-2"}
       >

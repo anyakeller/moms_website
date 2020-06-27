@@ -1,18 +1,27 @@
 // WHAT IS SCSS
 
-
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
 
-$body-bg: #7D7D7D;
+//$body-bg: #7D7D7D;
+
+body {
+  background: rgb(69, 69, 69);
+  background: linear-gradient(
+    0deg,
+    rgba(69, 69, 69, 1) 0%,
+    rgba(125, 125, 125, 1) 100%
+  );
+}
 
 $jumbotron-bg: rgba(119, 119, 119, 0.8);
-.jumbotron{
+.jumbotron {
   backdrop-filter: blur(4px);
 }
 
-$normal-font: "Quicksand", sans-serif;
+$normal-font: "Roboto", sans-serif;
 $title-font: "Open Sans", sans-serif;
 
 $font-family-sans-serif: $normal-font;
