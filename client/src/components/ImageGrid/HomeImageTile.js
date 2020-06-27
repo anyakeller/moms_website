@@ -25,15 +25,16 @@ class HomeImageTile extends Component {
             ? `${this.props.ratioWidthToSum * 100}%`
             : `${this.props.ratioWidthToLargest * 100}%`,
           height: "auto",
-          margin: "0px 1.5px"
+          margin: this.state.isBigScreen ? "0px 1.5px" : "1px 5px"
         }}
-        className={this.state.isBigScreen ? "" : "px-2"}
+        className="home-img-shadow"
       >
         <img
           className="home-img-tile img-fluid"
           src={"./../images/" + this.props.file_name}
           tile-key={this.props.id}
           alt={this.props.alt}
+          style={{ position: "relative" }}
           //width={this.props.newWidth == 0 ? this.props.width : this.props.newWidth}
           //width={this.state.naturalWidth * this.state.scaleFactor}
         />
