@@ -4,20 +4,79 @@
     "desc": "n/a",
     "alt": "Brooch with criss cross 1",
     "tags": ["3D prints", "brooch"],
-    "width":1787
+    "group": "Brooch with",
+    "width": 1787
   },
   "Brooch with gold disks 2": {
     "file_name": "Brooch with gold disks 2.jpg",
     "desc": "n/a",
     "alt": "Brooch with gold disks 2",
     "tags": ["3D prints", "brooch"],
-    "width":2448
+    "group": "Brooch with",
+    "width": 2448
   },
   "Brooch with gold wires2": {
     "file_name": "Brooch with gold wires2.jpg",
     "desc": "n/a",
     "alt": "Brooch with gold wires 2",
     "tags": ["3D prints", "brooch"],
-    "width":2470
+    "group": "Brooch with",
+    "width": 2470
+  },
+  "laskin brooch 3 1": {
+    "file_name": "laskin brooch 3 1.jpg",
+    "desc": "n/a",
+    "alt": "Laskin brooch 3 1",
+    "tags": ["3D prints", "brooch"],
+    "group": "laskin brooch",
+    "width": 1834
+  },
+  "laskin brooch 9": {
+    "file_name": "laskin brooch 9.jpg",
+    "desc": "n/a",
+    "alt": "laskin brooch 9",
+    "tags": ["3D prints", "brooch"],
+    "group": "laskin brooch",
+    "width": 2576
+  },
+  "laskin brooch 12": {
+    "file_name": "laskin brooch 12.jpg",
+    "desc": "n/a",
+    "alt": "laskin brooch 12",
+    "group": "laskin brooch",
+    "tags": ["3D prints", "brooch"],
+    "width": 2328
+  },
+  "SP 2b": {
+    "file_name": "SP 2b.jpg",
+    "desc": "n/a",
+    "alt": "SP 2b",
+    "tags": ["3D prints", "pendant"],
+    "group": "SP",
+    "width": 2160
+  },
+  "sun day 1": {
+    "file_name": "sun day 1.jpg",
+    "desc": "n/a",
+    "alt": "sun day 1",
+    "tags": ["3D prints", "bracelet"],
+    "group": "sun day",
+    "width": 2160
+  },
+  "sun day 2": {
+    "file_name": "sun day 2.jpg",
+    "desc": "n/a",
+    "alt": "sun day 2",
+    "tags": ["3D prints", "bracelet"],
+    "group": "sun day",
+    "width": 2960
+  },
+  "ZZ 1a": {
+    "file_name": "ZZ 1a2.jpg",
+    "desc": "n/a",
+    "alt": "ZZ 1a",
+    "tags": ["3D prints", "pendant"],
+    "group": "ZZ",
+    "width": 2059
   }
 }
