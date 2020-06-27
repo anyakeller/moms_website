@@ -46,7 +46,8 @@ The entry point for this app is server.js. It runs on port 3001 when the app is 
   - GET: "did you get this?"
 
 \~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~<span style="font-size:1.1em;">*fin*</span>\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~
-#####[roll credits]
+
+##### [roll credits]
 
 #### Node Server dependencies
 
@@ -114,7 +115,7 @@ You may be asking yourself, or me, or the universe, "why is this a full stack ap
 And I reply, "I didn't realize react apps could run on their own without a node server until I had set up the server with mocha+chai tests and a single useless route. Now I'm too scared to remove it. I'm not very bright–so sue me."
 
 ## Ad-diend[um]s (pronounced like "friends")
-###### Just addendums, but rewritten in such a way that if you sqint your brain and say it in your head, it kind of sounds like like "Friends" (the tv show).  Note: If you say it out loud it doesn't work.
+###### Just addendums, but rewritten in such a way that if you sqint your brain and say it in your head, it kind of sounds like "Friends" (the tv show).  Note: If you say it out loud it doesn't work.
 
 ROSS AND RACHEL ROSS AND RACHEL ROSS AND RACHEL
 
